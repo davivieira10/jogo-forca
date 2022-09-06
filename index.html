@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jogo referente ao Challenge II do Programa ONE"
+    />
+    <title>Challenge II - Jogo da Forca</title>
+    <link
+      rel="shortcut icon"
+      href="src/imagens/logo-titulo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <section class="cabecalho">
+      <div class="header">
+        <header>
+          <h1>Challenge II - Jogo da Forca</h1>
+          <img src="src/imagens/img-forca.png" alt="Imagem jogo da forca" />
+        </header>
+      </div>
+    </section>
+    <!-- áudio -->
+    <audio preload="auto" autoplay controls loop class="music" id="music">
+      <source src="src/musicas/ferambie.mp3" type="audio/mpeg" />
+      <source src="" type="audio/ogg" />
+      <p>Seu navegador não suporta o elemento de áudio.</p>
+    </audio>
+    <div class="som">
+      <button onclick="play()" type="button">Play</button>
+      <button onclick="pause()" type="button">Pause</button>
+      <button onclick="stop()" type="button">Stop</button>
+    </div>
+
+    <!-- Logo Alura -->
+    <section class="logo-principal">
+      <img src="src/imagens/icon-alura.png" alt="Logo da Alura" />
+    </section>
+    <!-- Regras -->
+    <section class="regras">
+      <h2>❗ Regras:</h2>
+      <ul>
+        <li>Deve funcionar só com letras maiúsculas.</li>
+        <li>
+          Não devem ser utilizadas letras com acentos<br />nem caracteres
+          especiais.
+        </li>
+        <li>Não escolha a mesma letra.</li>
+        <li>Você pode adicionar palavras ao jogo.</li>
+      </ul>
+    </section>
+
+    <!-- Tema da página -->
+    <div>
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
+    <!-- Botões Iniciais-->
+    <main class="container">
+      <div class="botoes-principais">
+        <div class="pagina pagina-principal">
+          <button class="botao botao-play">Começar a jogar</button>
+          <button class="botao botao-adicionar">Adicionar nova palavra</button>
+        </div>
+      </div>
+      <div class="pagina pagina-adicionar hidden">
+        <textarea
+          class="adicionar-texto"
+          placeholder="Digite uma palavra ou frase"
+          maxlength="8"
+        ></textarea>
+        <div class="informacao">
+          <img src="src/imagens/exclamacao.png" alt="Informação" />
+          <p>Máx de 8 letras</p>
+        </div>
+        <div>
+          <button class="botao botao-salvar">Salvar e começar</button>
+          <button class="botao botao-cancelar">Cancelar</button>
+        </div>
+      </div>
+
+      <div class="pagina pagina-jogo hidden">
+        <canvas class="jogo"></canvas>
+        <div class="container-botoes">
+          <button class="botao botao-novo-jogo">Novo Jogo</button>
+          <button class="botao botao-desistir">Desistir</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        &COPY; Desenvolvido por:
+        <strong
+          ><a href="https://www.linkedin.com/ in/davi-adm/"
+            >Davi Vieira Gonçalves</a
+          ></strong
+        >
+        <a href="https://github.com/davivieira10" target="_blank"
+          ><img src="src/imagens/icon-github.png" alt="logo github"
+        /></a>
+        <a href="https://www.linkedin.com/in/davi-adm/" target="_blank">
+          <img src="src/imagens/icon-linkedin.png" alt="logo linkedin" /></a
+        ><br />
+        <small
+          >Second Challenge by:
+          <a href="https://www.alura.com.br/" target="_blank">Alura</a> &
+          <a
+            href="https://www.oracle.com/br/education/oracle-next-education/"
+            target="_blank"
+            >Oracle - ONE</a
+          ></small
+        >
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/998c60ef77.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
