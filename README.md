@@ -18,7 +18,7 @@
   <h3>EXTRAS:</h3>
 - A página deve conter um campo para inserção de texto com a finalidade de adicionar novas palavras ao jogo, e um botão "Adicionar nova palavra". 
 
-Clique para ver o projeto =>
+Clique para ver o projeto => https://davivieira10.github.io/Challenge-II-jogo-da-forca/
 
 <b>As ferramentas utilizadas foram:</b>
 <div style="display: inline_block"><br>
