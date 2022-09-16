@@ -2,6 +2,8 @@
 <h2>CRIAR UM JOGO DA FORCA.</h2>
 <h3>DESAFIO 02</h3>
 
+<img align="center" alt="Jogo da Forca" src="https://i.postimg.cc/TYRNZywK/projeto-jogo-forca.png"> 
+
 <h3>COMO ISSO DEVE SER FEITO?</h3>
   <h3>REQUISITOS:</h3>
 - Deve funcionar só com letras maiúsculas;<br>
